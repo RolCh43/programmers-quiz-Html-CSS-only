@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="An interactive quiz to test your knowledge.">
-    <title>Document</title>
+    <title>Programmer's quiz</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
         <h1>Interactive quiz for programmers</h1>
-        <p>Test your programming knowledge and how much you score!</p>
+        <p>Test your programming knowledge and see how much you score!</p>
     </header>
     <main>
         <!--Introduction-->
@@ -33,8 +34,8 @@
             </p>
         </section>
 
+         <!--1st qustion: multiple choice-->
         <section>
-            <!--1st qustion: multiple choice-->
             <h2>Question 1: Wich language is used to structure web pages?</h2>
             <form>
                 <input type="radio" id="q1a" name="question1" value="Python">
@@ -60,10 +61,11 @@
         <!--3rd question: password-->
         <section>
             <h2>Question 3: Type in a strong password example</h2>
-        </section>
             <form>
                 <input type="password" id="q3" name="question3" placeholder="Enter your password"><br>
             </form>
+        </section>
+            
 
         <!--4th question: date-->
         <section>
@@ -94,6 +96,7 @@
         <section>
             <h2>Question 6: Upload a file containing HTML code</h2>
             <form>
+                <label for="q6" class="custom-file-label">Choose HTML file</label>
                 <input type ="file" id="q6" name ="question6" accept=".html"><br>
             </form>
         </section>
@@ -118,7 +121,7 @@
                 by the logo bwlow?</h2>
                 <figure> 
                     <img src="./images/Java Logo.png" alt="Logo"><br>
-                    <figcaption>Figure 1: Programming Language logo</figcaption>
+                    <figcaption>Programming Language logo</figcaption>
                 </figure>
                 <form>
                      <input type="text" id="q8" name="question8" placeholder="Enter your answer here">   
@@ -200,8 +203,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Programmers Quiz. All rights reserved.</p>
-        <p>Created by <a href="https://github.com/RolCh43" target="_blank">RolCh43</a></p>
+        <p class="footer-paragraph">&copy; 2025 Programmers Quiz. All rights reserved.</p>
+        <p class="footer-paragraph">Created by <a href="https://github.com/RolCh43" target="_blank">RolCh43</a></p>
     </footer>
 </body>
 </html>
