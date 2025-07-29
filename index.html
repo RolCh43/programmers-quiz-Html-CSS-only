@@ -11,6 +11,7 @@
         <p>Test your programming knowledge and how much you score!</p>
     </header>
     <main>
+        <!--Introduction-->
         <section>
             <h2>About this quiz</h2>
             <p>This quiz is designed to challenge your <em>programming knowledge</em>. 
@@ -19,7 +20,7 @@
             </p>
             <p>
                 You will find diferent types of questions, including:
-                multiple-choice, texts and data questions.
+                multiple-choice, texts and date questions.
                 <br>challenge yourself and see how well you can do!
             </p>
             <p>
@@ -31,7 +32,176 @@
                 It is not intended to be a comprehensive test of your programming skills.
             </p>
         </section>
+
+        <section>
+            <!--1st qustion: multiple choice-->
+            <h2>Question 1: Wich language is used to structure web pages?</h2>
+            <form>
+                <input type="radio" id="q1a" name="question1" value="Python">
+                <label for="q1a">Python</label><br>
+                <input type="radio" id="q1b" name="question1" value="HTML">
+                <label for="q1b">HTML</label><br>
+                <input type="radio" id="q1c" name="question1" value="JavaScript">
+                <label for="q1c">JavaScript</label><br>
+                <input type="radio" id="q1d" name="question1" value="Ruby">
+                <label for="q1d">Ruby</label><br>
+            </form>
+        </section>
+
+        <!--2nd question: text-->
+        <section>
+            <h2>Question 2: In the URL https://google.com 
+                the section "google.com" is called the ___</h2>
+            <form>
+                <input type="text" id="q2" name="question2" placeholder="Enter your answer here">
+            </form>
+        </section>
+
+        <!--3rd question: password-->
+        <section>
+            <h2>Question 3: Type in a strong password example</h2>
+        </section>
+            <form>
+                <input type="password" id="q3" name="question3" placeholder="Enter your password"><br>
+            </form>
+
+        <!--4th question: date-->
+        <section>
+            <h2>Question 4: When was the first release of HTML?</h2>
+            <form>
+                <input type="date" id="q4" name="question4"><br>
+            </form>
+        </section>
+
+        <!--5th multiple choice-->
+        <section>
+            <h2>Question 5: Wich of these 5 tecnologies are
+                considered programming languages?</h2>
+            <form>
+                <input type="checkbox" id="q5a" name="question5" value="JavaScript">
+                <label for="q5a">JavaScript</label><br>
+                <input type="checkbox" id="q5b" name="question5" value ="HTML">
+                <label for="q5b">HTML</label><br>
+                <input type="checkbox" id="q5c" name="question5" value="Java">
+                <label for=""q5a>Java</label><br>
+                <input type="checkbox" id="q5d" name="question5" value="CSS">
+                <label for="q5d">CSS</label><br>
+            </form>
+            </h2>
+        </section>
+
+        <!--6th question: upload file-->
+        <section>
+            <h2>Question 6: Upload a file containing HTML code</h2>
+            <form>
+                <input type ="file" id="q6" name ="question6" accept=".html"><br>
+            </form>
+        </section>
+
+        <!--7th question: dropdown-->
+        <section>
+            <h2>Question 7: Select the input attribute that defines
+                it's type</h2>
+            <form>
+                <select id="q7" name="question7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="class">class</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
+
+        <!--8th question: image-->
+        <section>
+            <h2>Question 8: Wich programming language is represented
+                by the logo bwlow?</h2>
+                <figure> 
+                    <img src="./images/Java Logo.png" alt="Logo"><br>
+                    <figcaption>Figure 1: Programming Language logo</figcaption>
+                </figure>
+                <form>
+                     <input type="text" id="q8" name="question8" placeholder="Enter your answer here">   
+                </form> <br>
+        </section>
+
+        <!-- Score table-->
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Score</th>
+                        <th>Feedback</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Don't give up! Keep at it an come back again.</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>You can do better! How about studying more?</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Good job! You have a solid understanding of programming.</td>   
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Excellent! You got it all!</td>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Thank you for taking the quiz!</td>
+                    </tr>
+                </tfoot>
+
+
+            </table>
+
+        </section>
+
+        <!--Answers-->
+        <section>
+            <h2>Check your answers</h2>
+            <details>
+                <summary>Click here to check the answers</summary>
+                <ol>
+                    <li>HTML</li>
+                    <li>Domain name</li>
+                    <li>Strong password example</li> 
+                    <li>1991</li>
+                    <li>JavaScript, Java</li>
+                    <li>".html" file</li>
+                    <li>type</li>
+                    <li>Java</li>
+                </ol>
+            </details>
+
+        </section>
+
+        <!--Feedback form-->
+        <section>
+            <h2>Give us your feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact info</legend>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name"> <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email"> <br>
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Your comments here"></textarea> <br>
+                    <button onclick="alert('Feedback sent. Thank you!')">Submit</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; 2025 Programmers Quiz. All rights reserved.</p>
+        <p>Created by <a href="https://github.com/RolCh43" target="_blank">RolCh43</a></p>
+    </footer>
 </body>
 </html>
